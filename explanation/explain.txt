@@ -1,0 +1,54 @@
+This is a cli tool that has the 
+idea of a linked list but
+it workd with commands!!
+
+the commands are:
+    add
+    del
+    count 
+    print
+    cls
+    exit
+    help
+
+the "add" command is for adding nodes
+to the the linked list :
+    you just saying. syntax: add [value] 
+    and adds it to the list. 
+    LIST: value -> NULL
+
+the "del" command is for deleteing 
+node from the linked list :
+    you also passing values here
+    syntax: del [value] 
+    after that the value no longer exist
+    int the list
+
+the "count" command count the 
+Nodes so if you just type count:
+    it show you how many nodes
+    the list has.
+    USE: count 
+    OUTPUT: Elements count: 4
+
+the "print" command prints the 
+list so if you jus type 'print'
+    the ouput will be something
+    like that:
+    4 -> 2 -> 8 -> NULL
+
+the "cls" command clears the 
+terminal screen so if your
+screen is filled with text:
+    type 'cls' and it clears 
+    it !!
+
+the "exit" command is for exiting 
+the program when you want:
+    just type 'exit' and
+    the program will stop
+
+the "help" command is for 
+showing you all the evailble
+commands. it explains them 
+sortly and works like a cheetseet
