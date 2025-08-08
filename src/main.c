@@ -5,7 +5,7 @@
 
 static void help_command(void)
 {
-    printf("\nCommands:\n\n");
+    printf("\nCommands:\n");
     printf("   add   <value> : adds a value to the list\n");
     printf("   del   <value> : deletes a value from the list\n");
     printf("   count         : counts the list elements\n");
@@ -25,7 +25,7 @@ int main(void)
     
     while(1) {
             //geting input
-            printf("skinwalker@> ");
+            printf("Prompt@~> ");
             if(fgets(input,sizeof(input),stdin)==NULL) { 
                     printf("Error: Input failure\n");
                     continue;
