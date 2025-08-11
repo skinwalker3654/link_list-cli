@@ -66,6 +66,7 @@ void delete_node(Node **head, int value)
     //deleting the value
     prev->next = temp->next;
     free(temp);
+    
     printf("Value %d deleted succesfuly\n",value);
 }
 
