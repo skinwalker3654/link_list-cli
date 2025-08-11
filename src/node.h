@@ -10,8 +10,8 @@ typedef struct Node {
 //functions
 void add_node(Node **head,int value);
 void delete_node(Node **head,int value);
-void count(Node *head);
-void print(Node *head);
+void count_nodes(Node *head);
+void print_nodes(Node *head);
 void free_list(Node *head);
 
 #endif
