@@ -26,8 +26,8 @@ void add_node(Node **head,int value)
     Node *temp = *head;
     while(temp-> next != NULL) 
             temp = temp->next;
+    
     temp->next = new_node;
-
     printf("Value %d added succesfuly\n",value);
 }
 
@@ -92,7 +92,8 @@ void print_nodes(Node *head)
 
 
 
-void count_nodes(Node *head) {
+void count_nodes(Node *head) 
+{
     //checking if list is empty
     if(head == NULL) {
             printf("List is empty\n");
@@ -112,7 +113,8 @@ void count_nodes(Node *head) {
 
 
 
-void free_list(Node *head) {
+void free_list(Node *head) 
+{
     if(head == NULL) return;
     
     //starts freeying the memory
