@@ -53,13 +53,13 @@ int main(void)
                             printf("Error: Invalid arguments passed\n");
                             continue;
                     }
-                    count(head);
+                    count_nodes(head);
             } else if(strcmp(command, "print")==0) {
                     if(persed != 1) {
                             printf("Error: Invalid arguments passed\n");
                             continue;
                     } 
-                    print(head);
+                    print_nodes(head);
             } else if(strcmp(command, "cls")==0) {
                     if(persed != 1) {
                             printf("Error: Invalid arguments passed\n");
