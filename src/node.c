@@ -72,7 +72,7 @@ void delete_node(Node **head, int value)
 
 
 
-void print(Node *head) 
+void print_nodes(Node *head) 
 {
     //checking if list is empty
     if(head == NULL) {
@@ -92,7 +92,7 @@ void print(Node *head)
 
 
 
-void count(Node *head) {
+void count_nodes(Node *head) {
     //checking if list is empty
     if(head == NULL) {
             printf("List is empty\n");
