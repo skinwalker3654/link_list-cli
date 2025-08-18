@@ -35,51 +35,51 @@ int main(void)
             if(strlen(input)==0) {continue;}
 
             //commands check
-            int persed = sscanf(input,"%s %d",command,&value);
+            int parsed = sscanf(input,"%s %d",command,&value);
             if(strcmp(command,"add")==0) {
-                    if(persed != 2) {
+                    if(parsed != 2) {
                             printf("Error: Invalid arguments passed\n");
                             continue;
                     }
                     add_node(&head,value);
             } else if(strcmp(command,"del")==0) {
-                    if(persed != 2) {
+                    if(parsed != 2) {
                             printf("Error: Invalid arguments passed\n");
                             continue;
                     }
                     delete_node(&head,value);
             } else if(strcmp(command, "count")==0) {
-                    if(persed != 1) {
+                    if(parsed != 1) {
                             printf("Error: Invalid arguments passed\n");
                             continue;
                     }
                     count_nodes(head);
             } else if(strcmp(command, "print")==0) {
-                    if(persed != 1) {
+                    if(parsed != 1) {
                             printf("Error: Invalid arguments passed\n");
                             continue;
                     } 
                     print_nodes(head);
             } else if(strcmp(command, "cls")==0) {
-                    if(persed != 1) {
+                    if(parsed != 1) {
                             printf("Error: Invalid arguments passed\n");
                             continue; 
                     }
                     system("clear"); 
             } else if(strcmp(command, "help")==0) {
-                    if(persed != 1) {
+                    if(parsed != 1) {
                             printf("Error: Invalid arguments passed\n");
                             continue;
                     } 
                     help_command();
             } else if(strcmp(command,"exit")==0) {
-                    if(persed != 1) {
+                    if(parsed != 1) {
                             printf("Error: Invalid arguments passed\n");
                             continue;
                     }
                     printf("Exiting the program...\n");
-                    return 0;
                     free_list(head);
+                    return 0;
             } else {
                     printf("Error: Invalid command '%s'\n",command);
                     continue;
